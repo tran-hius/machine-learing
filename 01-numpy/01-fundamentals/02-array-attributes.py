@@ -1,14 +1,23 @@
 import numpy as np
 
-arr = np.array([10, 20, 30, 40, 50])
+# ==========================================
+# 1. Thuộc tính cơ bản của mảng 1D
+# ==========================================
+arr_1d = np.array([10, 20, 30, 40, 50])
 
-print(arr)
-print(arr.size) #Tổng số phần tử của mảng
-print(arr.ndim) #Số chiều của mảng
-print(arr.shape) #Kích thước từng chiều
-print(arr.dtype) #Kiểu dữ liệu của phần tử
+print("Mảng 1D:", arr_1d)
+print("ndim (số chiều):", arr_1d.ndim)
+print("shape (kích thước từng chiều):", arr_1d.shape)
+print("size (tổng số phần tử):", arr_1d.size)
+print("dtype (kiểu dữ liệu):", arr_1d.dtype)
 
-arr1 = np.zeros((3, 2, 4))
-print(arr1.tolist())
-print(arr1.ndim)
-print(arr1.shape)
+# ==========================================
+# 2. Thuộc tính của mảng nhiều chiều (3D)
+# ==========================================
+arr_3d = np.zeros((3, 2, 4))  # 3 block, mỗi block 2 hàng x 4 cột
+
+print("\nMảng 3D:\n", arr_3d)
+print("ndim (số chiều):", arr_3d.ndim)
+print("shape (kích thước từng chiều):", arr_3d.shape)
+print("size (tổng số phần tử):", arr_3d.size)
+print("dtype (kiểu dữ liệu):", arr_3d.dtype)

@@ -1,8 +1,10 @@
 import numpy as np
 
-array = np.array([1,2,3,4,5,6])
+# ==========================================
+# Tạo mảng 1D từ Python list (np.array)
+# ==========================================
+arr = np.array([1, 2, 3, 4, 5, 6])
+print("arr:", arr)
 
-
-# NumPy Array
 numbers = np.array([10, 20, 30])
-print(numbers + numbers)
+print("numbers:", numbers)
